@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset = "UTF-8">
+<title>Text Reverser</title>
+<link rel = "stylesheet" href = "style.css">
+<link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400">
+</head>
+<header>
+  <h2>Text Reverser</h2>
+</header>
+<body>
+  <div id = "app">
+    <div>
+      <b>How to Use</b>
+      <br>
+      Simply begin typing the text that you would like reversed into the first text box, and then the reversed text will populate in the second text box.
+      <br><br>There is a maximum limit of 300 characters, which is displayed beneath the input text box.
+      <br>
+      <br>
+      A "Clear Text" button has been provided for your convenience, as well.
+    </div>
+    <br>
+    <button onclick = "clearText()">Clear Text</button><br><br>
+    <div id = "textboxes">
+    <form oninput = "inputCallback()">
+      <textarea rows = "6" maxlength = "300" placeholder = "Your original text will go here." id = "original-textbox"></textarea>
+      <div id = "characters-remaining">Characters remaining: 300</div>
+    </form>
+    <br>
+    <textarea rows = "6" placeholder = "Your reversed text will go here." id = "reversed-textbox" readonly></textarea>
+    </div>
+  </div>
+  <script type = "text/javascript" src = "index.js"></script>
+</body>
+<div id = "footer">
+  <span>Created by <b>Andrew Vo</b></span>
+  <span><a href = "mailto: atvo912@gmail.com">atvo912@gmail.com</a> | <a href = "https://github.com/atvo912">github.com/atvo912</a> | <a href = "https://linkedin.com/in/atvo912/">linkedin.com/in/atvo912</a></span>
+</div>
+</html>
